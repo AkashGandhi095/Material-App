@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TeamWork</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="sign_in">Sign In</string>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

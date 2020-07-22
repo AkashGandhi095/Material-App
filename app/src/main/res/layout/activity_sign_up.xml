@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="SIGN UP"
+            android:textColor="#4901B1"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/materialTextView2">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="12dp"
+                android:background="#E5E0EC"
+                android:layout_height="match_parent">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editEmailSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editNameSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:padding="12dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editEmailSignUp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editEmailSignUp"
+                    app:layout_constraintTop_toBottomOf="@+id/editEmailSignUp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPasswordSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="Password"
+                    android:inputType="textWebPassword"
+                    android:padding="12dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editNameSignUp"
+                    app:layout_constraintStart_toStartOf="@+id/editNameSignUp"
+                    app:layout_constraintTop_toBottomOf="@+id/editNameSignUp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editRePasswordSignUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_bg"
+                    android:hint="Confirm Password"
+                    android:inputType="textWebPassword"
+                    android:padding="12dp"
+                    app:layout_constraintEnd_toEndOf="@+id/editPasswordSignUp"
+                    app:layout_constraintStart_toStartOf="@+id/editPasswordSignUp"
+                    app:layout_constraintTop_toBottomOf="@+id/editPasswordSignUp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/signInHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="Already have an account? Sign In now"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/editRePasswordSignUp"
+                    tools:layout_editor_absoluteX="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/editSignUpButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    app:layout_constraintEnd_toEndOf="@+id/editRePasswordSignUp"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="@+id/editRePasswordSignUp"
+                    app:layout_constraintTop_toBottomOf="@+id/signInHint" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
